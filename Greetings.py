@@ -4,6 +4,8 @@ import random
 def DigaOi(ctx):
     nome = Author.GetName(ctx)
 
+    #listas para gerar diferentes combinacoes para o cumprimento
+
     p1 = ["Opa, ", "Fala comigo, ", "Eaí, ", "Oláá, ", "Oii, ", "Hey, "]
     n1 = (random.randint(0, len(p1)-1))
 

@@ -27,6 +27,7 @@ def GetCardsMemberIsOn(id_membro):
 
     resposta = resposta[:-2]  
 
+    #retorna a lista de cards que a pessoa ingressou
     return resposta
 
 

@@ -9,6 +9,8 @@ def GetMemberId(name):
         "alex": "6111bd323cfb3d8f094f4319",
         "antonio": "6111bd323cfb3d8f094f4319",
         "ian": "6111e579361b382693bed48e",
+        "mayan": "5f162915c054a565267ffbfb",
+        "tutu": "5f162915c054a565267ffbfb"
     }
 
     try:

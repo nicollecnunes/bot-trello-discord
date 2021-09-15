@@ -23,9 +23,9 @@ def GetCardsMemberIsOn(id_membro):
     for i in range(len(data)):
         if(i!=0):
             lista = data[i].split('"')
-            resposta = resposta + (lista[4]) + ", "
+            resposta = resposta + (lista[4]) + "\n"
 
-    resposta = resposta[:-2]  
+    #resposta = resposta[:-2]  
 
     #retorna a lista de cards que a pessoa ingressou
     return resposta

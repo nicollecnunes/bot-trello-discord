@@ -7,6 +7,7 @@ import Help
 
 #importacoes externas
 import discord
+from decouple import config
 from discord.ext import commands
 
 
@@ -57,4 +58,5 @@ async def helpme(ctx):
     await ctx.send(Help.SendHelpMessage(ctx))
 
 #inicia o bot
-client.run('token')
+token = config("TOKENSECRETO")
+client.run(token)

@@ -23,12 +23,15 @@ async def on_ready():
 async def ola(ctx):
     await ctx.send(Greetings.DigaOi(ctx))
 
+@client.command()
 async def oi(ctx):
     await ctx.send(Greetings.DigaOi(ctx))
 
+@client.command()
 async def eai(ctx):
     await ctx.send(Greetings.DigaOi(ctx))
 
+@client.command()
 async def ei(ctx):
     await ctx.send(Greetings.DigaOi(ctx))
 
@@ -41,13 +44,16 @@ async def tarefa(ctx, name):
     if (id_member_trello != "error"):
         response = Trello.GetCardsMemberIsOn(id_member_trello)
         #acha a tarefa e manda a mensagem
-        await ctx.send(f"{name_author}, você precisa fazer as seguintes tarefas: \n {response}")
+        if (response == ""):
+            await ctx.send(f"{name_author}, você já fez todas as suas tarefas!")
+        else:
+            await ctx.send(f"{name_author}, você precisa fazer as seguintes tarefas: \n {response}")
     else:
         await ctx.send(f"Poxa, {name_author}, eu não te conheço ainda! Peça para alguém da VP te cadastrar no BOT :)")
     
 
 @client.command()
-async def help(ctx):
+async def helpme(ctx):
     await ctx.send(Help.SendHelpMessage(ctx))
 
 #inicia o bot

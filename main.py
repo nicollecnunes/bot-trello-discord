@@ -51,4 +51,4 @@ async def help(ctx):
     await ctx.send(Help.SendHelpMessage(ctx))
 
 #inicia o bot
-client.run('ODg3NTE0OTgzMDgzMTY3ODE0.YUFQvQ.I76Ak2sYp7Y8iTqzQqL0jyorYgY')
+client.run('token')
